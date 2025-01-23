@@ -219,7 +219,7 @@ def editStudent():
                     elif ((len(new_name)<3) or (len(new_name) > 50)):
                         print("The name must be between 3 to 50 characters. Please try again.")
                         continue
-                    elif not all(char.isalpha() or char.isspace() or char =="." for char in name):
+                    elif not all(char.isalpha() or char.isspace() or char =="." for char in new_name):
                         print("The name can only contain alphabatical charecters and dot. Please try again.")
                         continue
                     new_name = ' '.join(word[0].upper() + word[1:] for word in new_name.split() if word)
@@ -235,10 +235,10 @@ def editStudent():
                     elif not new_dept:
                         print("Field can't be empty. Please try again.")
                         continue
-                    elif ((len(name)<3) or (len(dept) > 50)):
+                    elif ((len(new_dept)<3) or (len(new_dept) > 50)):
                         print("Department name must be between 3 to 50 characters. Please try again.")
                         continue
-                    elif not all(char.isalpha() or char.isspace() or char =="." or char =="&" for char in dept):
+                    elif not all(char.isalpha() or char.isspace() or char =="." or char =="&" for char in new_dept):
                         print("The department name can only contain alphabatical charecters, dot and aparend sign. Please try again.")
                         continue
                     new_dept = ' '.join(word[0].upper() + word[1:] for word in new_dept.split() if word)
