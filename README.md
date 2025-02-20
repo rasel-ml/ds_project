@@ -48,14 +48,14 @@ The project was developed as part of the **Data Science with Python** course and
 ### Prerequisites
 Ensure you have **Python 3.7+** and **pip** installed. Then, install the required dependencies:
 ```sh
-pip install django pandas matplotlib seaborn scikit-learn joblib
+pip install django pandas matplotlib seaborn scikit-learn joblib git
 ```
 
 ### Run the Project
 1. Clone this repository:
 ```sh
-git clone https://github.com/yourusername/weather-prediction-app.git
-cd weather-prediction-app
+git clone https://github.com/rasel-ml/ds_project.git
+cd ds_project
 ```
 2. Run Django migrations:
 ```sh
@@ -91,21 +91,22 @@ weather-prediction-app/
 ```
 
 ## How to Use the App
-### 1. Weather Prediction
-- Navigate to **Weather Prediction** page.
-- Choose between **Rainfall Prediction** or **Temperature Prediction**.
-- Enter the required input values.
-- Click **Predict** to get results.
+
+### 1. Weather Analysis
+- Navigate to **Weather Analysis**.
+- Upload a dataset.
+- Get insights using **Regression and Clustering models**.
 
 ### 2. Weather Visualization
 - Go to **Weather Visualization**.
 - Upload a dataset (CSV or XLSX).
 - Click **Upload** to generate graphs.
 
-### 3. Weather Analysis
-- Navigate to **Weather Analysis**.
-- Upload a dataset.
-- Get insights using **Regression and Clustering models**.
+### 3. Weather Prediction
+- Navigate to **Weather Prediction** page.
+- Choose between **Rainfall Prediction** or **Temperature Prediction**.
+- Enter the required input values.
+- Click **Predict** to get results.
 
 ## Dataset
 The dataset used for training and analysis was collected from **Kaggle**, containing historical weather data from **1901 to 2023**.
